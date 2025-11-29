@@ -14,7 +14,10 @@ export default function JoinPage() {
     vpConversionSetup();
     vpConversionCheck();
 
-    /* META LEAD EVENT WILL BE INSERTED HERE */
+    /* Meta Lead Event - fires once on /join page load */
+    if (typeof (window as any).fbq !== 'undefined') {
+      (window as any).fbq('track', 'Lead');
+    }
 
     /* DOM interaction listener for Meta validation */
     const continueBtn = document.getElementById("continue-btn-m9");
