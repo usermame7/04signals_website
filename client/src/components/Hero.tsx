@@ -78,7 +78,7 @@ export default function Hero() {
           {/* Main CTA Button */}
           <div id="vp-cta-main-e6" className="mb-8 sm:mb-10 px-4">
             <a
-              href="/join"
+              href="/success"
               className="inline-flex items-center gap-2.5 sm:gap-3.5 px-8 sm:px-11 py-4 sm:py-5 rounded-2xl font-black cta-primary-v3 text-white border-2 border-vpfx-accent/50 transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:translate-y-0 active:scale-95 glow-soft-v1 auto-shake-v1 tap-shake-v1 text-base sm:text-xl shadow-2xl w-full sm:w-auto justify-center max-w-md mx-auto"
               data-testid="button-join-channel"
             >

@@ -52,21 +52,21 @@ export default function Header() {
           {/* Desktop Nav Menu */}
           <div id="vp-nav-menu-z6" className="hidden md:flex items-center gap-5 lg:gap-7">
             <a 
-              href="/join"
+              href="/success"
               className="text-vpfx-text hover:text-vpfx-accent font-semibold transition-all duration-300 hover:scale-105"
               data-testid="link-nav-courses"
             >
               Trading Courses
             </a>
             <a 
-              href="/join"
+              href="/success"
               className="text-vpfx-text hover:text-vpfx-accent font-semibold transition-all duration-300 hover:scale-105"
               data-testid="link-nav-community"
             >
               Our Community
             </a>
             <a 
-              href="/join"
+              href="/success"
               className="text-vpfx-text hover:text-vpfx-accent font-semibold transition-all duration-300 hover:scale-105"
               data-testid="link-nav-lessons"
             >
@@ -84,7 +84,7 @@ export default function Header() {
           {/* Mobile Controls + CTA */}
           <div id="vp-nav-controls-y7" className="flex items-center gap-3.5">
             <ChannelButton 
-              href="/join"
+              href="/success"
               variant="compact"
               customClass="hidden sm:flex"
             />

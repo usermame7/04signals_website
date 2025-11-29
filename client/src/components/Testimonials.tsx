@@ -120,7 +120,7 @@ export default function Testimonials() {
               Educational content only. No guarantees provided.
             </p>
             <a
-              href="/join"
+              href="/success"
               className="cta-primary-v3 inline-flex items-center gap-3.5 px-9 py-4.5 rounded-2xl font-black text-vpfx-bg transition-all duration-300 hover:-translate-y-1 hover:scale-105 motion-glow-v1 auto-shake-v1 tap-shake-v1"
               data-testid="button-testimonial-join"
             >

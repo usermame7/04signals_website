@@ -7,7 +7,7 @@ export default function ThankYouPage() {
 
   useEffect(() => {
     // Google Analytics tracking only - NO Lead event here
-    // Lead event fires on /join page only
+    // Lead event fires on /success page only
     if (typeof (window as any).gtag !== 'undefined') {
       (window as any).gtag('event', 'page_view', {
         page_title: 'Thank You',

@@ -23,7 +23,7 @@ export default function Footer() {
             </p>
             <div className="flex flex-wrap justify-center gap-4.5 mt-4.5">
               <a
-                href="/join"
+                href="/success"
                 className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-lg font-semibold bg-vpfx-accent text-white transition-all duration-300 hover:bg-vpfx-accent/90 hover:scale-105 auto-shake-v1 tap-shake-v1"
                 data-testid="button-footer-channel"
               >
@@ -83,7 +83,7 @@ export default function Footer() {
           
           {/* Nav Links */}
           <div id="vp-footer-nav-z0" className="flex flex-wrap justify-center gap-7 text-xs text-vpfx-muted">
-            <a href="/join" className="hover:text-vpfx-accent transition-colors" data-testid="link-footer-channel">Telegram Access</a>
+            <a href="/success" className="hover:text-vpfx-accent transition-colors" data-testid="link-footer-channel">Telegram Access</a>
             <span>•</span>
             <a href="/contact" className="hover:text-vpfx-accent transition-colors" data-testid="link-footer-contact">Get in Touch</a>
             <span>•</span>
