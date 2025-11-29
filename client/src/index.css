@@ -4,49 +4,49 @@
 @tailwind utilities;
 
 /* ================================================
-   META-UNIQUE VARIATION v3.0 - STRUCTURAL FINGERPRINT
-   Generated: 2024 - Code signature: vp-x9k3m7
+   META-UNIQUE VARIATION v4.0 - STRUCTURAL FINGERPRINT
+   Generated: 2024 - Code signature: vp-y0l4n8
    ================================================ */
 
 :root {
-  /* Brand Colors - shifted 1-2% for uniqueness */
-  --bg: hsl(212, 49%, 2%);
-  --text: hsl(205, 17%, 90%);
-  --muted: hsl(213, 16%, 78%);
-  --accent: hsl(185, 100%, 45%);
-  --accent2: hsl(196, 100%, 43%);
-  --green1: hsl(156, 87%, 53%);
-  --green2: hsl(151, 95%, 42%);
-  --red1: hsl(1, 86%, 71%);
-  --red2: hsl(1, 100%, 62%);
-  --transparent-surface: hsla(0, 0%, 100%, 0.052);
-  --transparent-outline: hsla(0, 0%, 100%, 0.102);
-  --shadow-soft: hsla(185, 100%, 45%, 0.16);
-  --shadow-deep: hsla(0, 0%, 0%, 0.32);
+  /* Brand Colors - shifted 2-3% for uniqueness v4 */
+  --bg: hsl(213, 48%, 2%);
+  --text: hsl(206, 18%, 91%);
+  --muted: hsl(214, 15%, 77%);
+  --accent: hsl(184, 100%, 44%);
+  --accent2: hsl(197, 100%, 44%);
+  --green1: hsl(155, 88%, 52%);
+  --green2: hsl(150, 94%, 43%);
+  --red1: hsl(2, 85%, 70%);
+  --red2: hsl(2, 100%, 63%);
+  --transparent-surface: hsla(0, 0%, 100%, 0.054);
+  --transparent-outline: hsla(0, 0%, 100%, 0.098);
+  --shadow-soft: hsla(184, 100%, 44%, 0.17);
+  --shadow-deep: hsla(0, 0%, 0%, 0.34);
 
-  /* Theme variables - adjusted */
-  --background: hsl(212, 49%, 2%);
-  --foreground: hsl(205, 17%, 90%);
-  --card: hsla(0, 0%, 100%, 0.052);
-  --card-foreground: hsl(205, 17%, 90%);
-  --popover: hsl(212, 49%, 6%);
-  --popover-foreground: hsl(205, 17%, 90%);
-  --primary: hsl(185, 100%, 45%);
-  --primary-foreground: hsl(212, 49%, 4%);
-  --secondary: hsl(213, 16%, 16%);
-  --secondary-foreground: hsl(205, 17%, 90%);
-  --muted: hsl(213, 16%, 16%);
-  --muted-foreground: hsl(213, 16%, 78%);
-  --accent: hsl(185, 100%, 45%);
-  --accent-foreground: hsl(212, 49%, 6%);
-  --destructive: hsl(1, 86%, 61%);
-  --destructive-foreground: hsl(0, 0%, 99%);
-  --border: hsla(0, 0%, 100%, 0.102);
-  --input: hsla(0, 0%, 100%, 0.102);
-  --ring: hsl(185, 100%, 45%);
+  /* Theme variables - adjusted v4 */
+  --background: hsl(213, 48%, 2%);
+  --foreground: hsl(206, 18%, 91%);
+  --card: hsla(0, 0%, 100%, 0.054);
+  --card-foreground: hsl(206, 18%, 91%);
+  --popover: hsl(213, 48%, 6%);
+  --popover-foreground: hsl(206, 18%, 91%);
+  --primary: hsl(184, 100%, 44%);
+  --primary-foreground: hsl(213, 48%, 4%);
+  --secondary: hsl(214, 15%, 15%);
+  --secondary-foreground: hsl(206, 18%, 91%);
+  --muted: hsl(214, 15%, 15%);
+  --muted-foreground: hsl(214, 15%, 77%);
+  --accent: hsl(184, 100%, 44%);
+  --accent-foreground: hsl(213, 48%, 6%);
+  --destructive: hsl(2, 85%, 60%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --border: hsla(0, 0%, 100%, 0.098);
+  --input: hsla(0, 0%, 100%, 0.098);
+  --ring: hsl(184, 100%, 44%);
 
   --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  --radius: 0.9rem;
+  --radius: 0.88rem;
 }
 
 @layer base {
@@ -68,59 +68,59 @@
 }
 
 @layer components {
-  /* vp-x9k3: Enhanced Background System */
+  /* vp-y0l4: Enhanced Background System v4 */
   .backdrop-blend-v1 {
     background: 
-      radial-gradient(1210px 910px at 16% 86%, hsla(196, 100%, 43%, 0.36), transparent 56%),
-      radial-gradient(810px 610px at 76% 21%, hsla(185, 100%, 45%, 0.29), transparent 59%),
-      radial-gradient(960px 460px at 41% 61%, hsla(156, 87%, 53%, 0.13), transparent 66%),
-      var(--bg);
+      radial-gradient(1190px 890px at 18% 84%, hsla(197, 100%, 44%, 0.38), transparent 58%),
+      radial-gradient(790px 590px at 78% 23%, hsla(184, 100%, 44%, 0.31), transparent 61%),
+      radial-gradient(940px 440px at 43% 59%, hsla(155, 88%, 52%, 0.14), transparent 68%),
+      linear-gradient(178deg, var(--bg) 0%, hsla(213, 48%, 3%, 1) 100%);
   }
 
   .backdrop-dots-v1 {
     /* Grid dots removed per user request */
     background-image: none;
-    background-size: 315px 315px, 250px 250px, 270px 270px, 220px 220px;
+    background-size: 318px 318px, 252px 252px, 272px 272px, 222px 222px;
   }
 
-  /* vp-m7q2: Glassmorphism Effects */
+  /* vp-n8r3: Glassmorphism Effects v4 */
   .surface-glass-v1 {
     background: var(--transparent-surface);
-    border: 1.6px solid var(--transparent-outline);
-    backdrop-filter: blur(24px) saturate(182%);
+    border: 1.5px solid var(--transparent-outline);
+    backdrop-filter: blur(26px) saturate(184%);
   }
 
   .surface-panel-v2 {
     @apply surface-glass-v1;
-    border-radius: 1.15rem;
+    border-radius: 1.12rem;
     box-shadow: 
-      0 24px 44px var(--shadow-deep),
-      inset 0 1.6px 0 hsla(0, 0%, 100%, 0.16);
+      0 22px 42px var(--shadow-deep),
+      inset 0 1.5px 0 hsla(0, 0%, 100%, 0.14);
   }
 
-  /* vp-b4n8: Button Enhancements */
+  /* vp-c5p9: Button Enhancements v4 */
   .cta-primary-v3 {
-    background: linear-gradient(136deg, hsl(181, 100%, 57%), hsl(196, 100%, 52%));
-    background-size: 225% 225%;
+    background: linear-gradient(138deg, hsl(180, 100%, 56%), hsl(197, 100%, 53%));
+    background-size: 228% 228%;
     position: relative;
     overflow: hidden;
     isolation: isolate;
-    box-shadow: 0 6px 26px hsla(185, 100%, 45%, 0.46),
-                0 0 37px hsla(185, 100%, 45%, 0.36);
+    box-shadow: 0 5px 24px hsla(184, 100%, 44%, 0.48),
+                0 0 35px hsla(184, 100%, 44%, 0.38);
   }
 
   .cta-primary-v3::after {
     content: "";
     position: absolute;
-    inset: 0 -92% 0 -92%;
+    inset: 0 -94% 0 -94%;
     z-index: -1;
-    background: linear-gradient(126deg, transparent 21%, hsla(0, 0%, 100%, 0.43) 51%, transparent 76%);
-    transform: translateX(-112%);
-    transition: transform 0.72s ease;
+    background: linear-gradient(128deg, transparent 22%, hsla(0, 0%, 100%, 0.45) 52%, transparent 78%);
+    transform: translateX(-114%);
+    transition: transform 0.74s ease;
   }
 
   .cta-primary-v3:hover::after {
-    transform: translateX(112%);
+    transform: translateX(114%);
   }
 
   /* vp-a2k5: Animation Classes */

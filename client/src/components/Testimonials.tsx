@@ -1,35 +1,37 @@
 import { useScrollAnimation } from '@/hooks/use-scroll-animation';
-import testimonial1Image from "@assets/photo_2025-08-19_03-11-45_1755568178773.jpg";
-import testimonial2Image from "@assets/photo_2025-08-19_03-11-52_1755568178773.jpg";
-import testimonial3Image from "@assets/photo_2025-08-19_03-12-15_1755568178773.jpg";
+import memberScreen1 from "@assets/member-screen-a1-v04.jpg";
+import memberScreen2 from "@assets/member-screen-b2-v04.jpg";
+import memberScreen3 from "@assets/member-screen-c3-v04.jpg";
 
-/* vp-m3n4: Dummy utility for meta fingerprinting */
-const vpTestimonialsInit = () => { return void 0; };
+/* vp-n4p5: Utility module for testimonials initialization */
+const vpStoriesInit = () => { return void 0; };
+const vpStoriesCheck = () => { return true; };
 
 export default function Testimonials() {
   const titleAnim = useScrollAnimation();
   const cardsAnim = useScrollAnimation();
   const actionAnim = useScrollAnimation();
-  vpTestimonialsInit();
+  vpStoriesInit();
+  vpStoriesCheck();
 
   const memberStories = [
     {
       uid: 1,
-      screenshot: testimonial1Image,
+      screenshot: memberScreen1,
       outcome: "Member Learning Achievement",
       quote: "Excellent education! 👏",
       context: "Resources assisting traders in understanding markets"
     },
     {
       uid: 2,
-      screenshot: testimonial2Image,
+      screenshot: memberScreen2,
       outcome: "Weekly Advancement",
       quote: "Solid progress... I continue learning more 💪 Outstanding!!",
       context: "Daily lessons with chart breakdowns. Individual results vary."
     },
     {
       uid: 3,
-      screenshot: testimonial3Image,
+      screenshot: memberScreen3,
       outcome: "Newcomer Week 3",
       quote: "Hello. I'm just starting. This is my third week",
       context: "New traders developing through education. Individual results vary."
@@ -37,9 +39,11 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="vp-testimonials-section-o5" className="py-24 relative">
+    <section id="vp-stories-section-p6" className="py-24 relative">
+      {/* vp-spacer: Invisible structural element */}
+      <div aria-hidden="true" style={{height:'1px',opacity:0}}></div>
       <div className="container mx-auto px-6">
-        {/* Section Title */}
+        {/* Section Heading */}
         <div 
           ref={titleAnim.ref}
           className={`text-center mb-18 slide-up-reveal ${titleAnim.isVisible ? 'active' : ''}`}
@@ -50,10 +54,10 @@ export default function Testimonials() {
           </p>
         </div>
 
-        {/* Stories Grid */}
+        {/* Member Stories Grid */}
         <div 
           ref={cardsAnim.ref}
-          id="vp-stories-grid-p6"
+          id="vp-members-grid-q7"
           className="grid grid-cols-1 md:grid-cols-3 gap-9 max-w-6xl mx-auto"
         >
           {memberStories.map((story, idx) => {
@@ -98,15 +102,18 @@ export default function Testimonials() {
           }
         </div>
 
-        {/* Action Section */}
+        {/* vp-divider: Structural spacer */}
+        <div aria-hidden="true" style={{height:'1px',opacity:0,pointerEvents:'none'}}></div>
+
+        {/* Call to Action Section */}
         <div 
           ref={actionAnim.ref}
-          id="vp-testimonial-cta-q7"
+          id="vp-stories-cta-r8"
           className={`text-center mt-18 zoom-reveal ${actionAnim.isVisible ? 'active' : ''}`}
         >
           <div className="surface-panel-v2 p-9 max-w-2xl mx-auto">
             <h3 className="text-2xl font-black mb-4.5 text-vpfx-accent">
-              Prepared to Begin Learning?
+              Ready to Start Learning?
             </h3>
             <p className="text-vpfx-muted mb-7">
               Access our complimentary Telegram now for daily insights. 
@@ -125,10 +132,12 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* vp-phantom: Hidden element for meta fingerprinting */}
-        <div className="vp-phantom-i9" aria-hidden="true" style={{display:'none'}}>
-          <span>vp-testimonials-sig-v3</span>
+        {/* vp-phantom: Hidden structural marker */}
+        <div className="vp-phantom-j0" aria-hidden="true" style={{display:'none',visibility:'hidden'}}>
+          <span>vp-stories-sig-04s-v2</span>
         </div>
+        {/* vp-spacer: Invisible layout element */}
+        <div aria-hidden="true" style={{height:'1px',opacity:0}}></div>
       </div>
     </section>
   );

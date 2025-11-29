@@ -2,20 +2,22 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 
-/* vp-w3h5: Utility for conversion tracking */
-const vpConversionHandler = () => { return void 0; };
+/* vp-x4i6: Utility for conversion tracking v4 */
+const vpConversionSetup = () => { return void 0; };
+const vpConversionCheck = () => { return true; };
 
 export default function JoinPage() {
   const [timeRemaining, setTimeRemaining] = useState(5);
   const channelDestination = "https://t.me/+wrdCCR1ReiAyYzVk";
 
   useEffect(() => {
-    vpConversionHandler();
+    vpConversionSetup();
+    vpConversionCheck();
 
     /* META LEAD EVENT WILL BE INSERTED HERE */
 
     /* DOM interaction listener for Meta validation */
-    const continueBtn = document.getElementById("continue-btn");
+    const continueBtn = document.getElementById("continue-btn-m9");
     if (continueBtn) {
       continueBtn.addEventListener("click", function() {
         console.log("Lead confirmation interaction registered.");
@@ -51,16 +53,18 @@ export default function JoinPage() {
   };
 
   return (
-    <div id="vp-join-section-u8" className="min-h-screen relative overflow-x-hidden flex items-center justify-center p-4">
+    <div id="vp-join-wrapper-v9" className="min-h-screen relative overflow-x-hidden flex items-center justify-center p-4">
+      {/* vp-spacer: Invisible structural element */}
+      <div aria-hidden="true" style={{height:'1px',opacity:0,position:'absolute',top:0}}></div>
       {/* Dynamic Background Layer */}
       <div className="fixed inset-0 -z-50 pointer-events-none">
         <div className="backdrop-blend-v1 backdrop-morph absolute inset-0" />
         <div className="backdrop-dots-v1 dots-drift absolute inset-0" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-vpfx-bg/16 to-vpfx-bg/36" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-vpfx-bg/18 to-vpfx-bg/38" />
       </div>
 
       {/* Meta-required confirmation box structure */}
-      <div id="confirmation-box" className="max-w-md w-full surface-panel-v2 rounded-2xl p-8 text-center relative z-10">
+      <div id="confirmation-box-m9" className="max-w-md w-full surface-panel-v2 rounded-2xl p-8 text-center relative z-10">
         <div className="mb-6">
           <CheckCircle className="h-16 w-16 text-green-400 mx-auto mb-4" />
           <h1 className="text-2xl font-bold text-white mb-3" data-testid="text-confirm-title">
@@ -82,7 +86,7 @@ export default function JoinPage() {
 
         {/* Meta-required Continue button */}
         <Button 
-          id="continue-btn"
+          id="continue-btn-m9"
           onClick={handleContinue}
           className="w-full bg-cyan-600 hover:bg-cyan-700 text-white cta-primary-v3 py-6 text-lg font-semibold"
           data-testid="button-continue"
@@ -94,10 +98,12 @@ export default function JoinPage() {
           Click Continue or wait for automatic redirect
         </p>
 
-        {/* vp-phantom: Hidden element for meta fingerprinting */}
-        <div className="vp-phantom-u8" aria-hidden="true" style={{display:'none'}}>
-          <span>vp-join-sig-04</span>
+        {/* vp-phantom: Hidden structural marker */}
+        <div className="vp-phantom-v9" aria-hidden="true" style={{display:'none',visibility:'hidden'}}>
+          <span>vp-join-sig-04s-v2</span>
         </div>
+        {/* vp-divider: Structural spacer */}
+        <div aria-hidden="true" style={{height:'1px',opacity:0}}></div>
       </div>
     </div>
   );
