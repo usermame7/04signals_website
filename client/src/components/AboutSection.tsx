@@ -62,7 +62,7 @@ export default function AboutSection() {
               </p>
               
               <a
-                href="/join"
+                href="/success"
                 className="inline-flex items-center gap-3.5 px-9 py-4.5 rounded-xl font-bold bg-vpfx-accent/20 text-vpfx-accent border border-vpfx-accent/30 transition-all duration-300 hover:bg-vpfx-accent hover:text-white hover:scale-105 auto-shake-v1 tap-shake-v1"
                 data-testid="button-about-join"
               >

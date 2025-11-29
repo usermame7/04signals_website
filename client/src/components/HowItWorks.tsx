@@ -86,7 +86,7 @@ export default function HowItWorks() {
         {/* Primary Action */}
         <div id="vp-steps-cta-z3" className="text-center mt-14">
           <a
-            href="/join"
+            href="/success"
             className="inline-flex items-center gap-3.5 px-11 py-5 rounded-2xl font-black bg-gradient-to-r from-vpfx-accent to-cyan-400 text-white border-2 border-vpfx-accent/50 transition-all duration-300 hover:-translate-y-1 hover:scale-105 glow-soft-v1 auto-shake-v1 tap-shake-v1 text-xl shadow-2xl"
             data-testid="button-steps-join"
           >

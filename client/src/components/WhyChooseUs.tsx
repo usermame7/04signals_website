@@ -61,7 +61,7 @@ export default function WhyChooseUs() {
               {/* Action Button */}
               <div className="mt-7">
                 <a
-                  href="/join"
+                  href="/success"
                   className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-lg font-semibold bg-vpfx-accent/20 text-vpfx-accent border border-vpfx-accent/30 transition-all duration-300 hover:bg-vpfx-accent hover:text-white hover:scale-105 auto-shake-v1 tap-shake-v1"
                   data-testid={`button-benefit-join-${idx}`}
                 >
