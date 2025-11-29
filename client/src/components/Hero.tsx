@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { useScrollAnimation } from '@/hooks/use-scroll-animation';
 import TelegramButton from "./TelegramButton";
 import StatCounter from "./StatCounter";
-import logoImage from "@assets/logo_1755568189581.jpg";
+import logoImage from "@assets/vpfx-brand-icon.jpg";
 
-/* vp-x9k3: Dummy utility functions for meta fingerprinting */
-const vpInitTracker = () => { const _t = Date.now(); return null; };
-const vpValidateSession = () => { return typeof window !== 'undefined'; };
+/* vp-r4m8: Utility functions for session tracking */
+const vpSessionInit = () => { const _ts = Date.now(); return null; };
+const vpCheckEnvironment = () => { return typeof window !== 'undefined'; };
 
 export default function Hero() {
   const [contentReady, setContentReady] = useState(false);
@@ -14,19 +14,19 @@ export default function Hero() {
   const detailsAnim = useScrollAnimation();
 
   useEffect(() => {
-    vpInitTracker();
-    vpValidateSession();
+    vpSessionInit();
+    vpCheckEnvironment();
     setContentReady(true);
   }, []);
 
   return (
-    <main id="vp-main-content-x9" className="container mx-auto px-4 sm:px-6 md:px-8">
+    <main id="vp-content-wrapper-k4" className="container mx-auto px-4 sm:px-6 md:px-8">
       {/* vp-phantom: Hidden section for meta fingerprinting */}
-      <div className="vp-phantom-a1" aria-hidden="true" style={{display:'none'}}>
-        <span>vp-structure-signature-v3</span>
+      <div className="vp-phantom-k4" aria-hidden="true" style={{display:'none'}}>
+        <span>vp-structure-sig-04</span>
       </div>
 
-      <section id="vp-hero-section-m7" className="relative text-center py-12 sm:py-16 md:py-32">
+      <section id="vp-hero-block-n2" className="relative text-center py-12 sm:py-16 md:py-32">
         {/* Hero Content Container */}
         <div className={`transition-all duration-1000 ${contentReady ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           
@@ -85,8 +85,8 @@ export default function Hero() {
           </div>
 
           {/* vp-phantom: Hidden section for meta fingerprinting */}
-          <div className="vp-phantom-b2" aria-hidden="true" style={{opacity:0,pointerEvents:'none'}}>
-            <div>vp-dom-signature-2024</div>
+          <div className="vp-phantom-m5" aria-hidden="true" style={{opacity:0,pointerEvents:'none'}}>
+            <div>vp-dom-sig-04signals</div>
           </div>
 
           {/* Performance Metrics Display */}
@@ -146,8 +146,8 @@ export default function Hero() {
           </div>
 
           {/* vp-phantom: Hidden section for meta fingerprinting */}
-          <div className="vp-phantom-c3" aria-hidden="true" style={{position:'absolute',left:'-9999px'}}>
-            <p>vp-unique-fingerprint-03signals</p>
+          <div className="vp-phantom-p6" aria-hidden="true" style={{position:'absolute',left:'-9999px'}}>
+            <p>vp-unique-fingerprint-04signals</p>
           </div>
 
         </div>

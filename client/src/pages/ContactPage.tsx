@@ -20,10 +20,7 @@ export default function ContactPage() {
       });
     }
 
-    // Track Meta Pixel Contact event
-    if (typeof (window as any).fbq !== 'undefined') {
-      (window as any).fbq('track', 'Contact');
-    }
+    /* META PIXEL CONTACT EVENT PLACEHOLDER */
 
     const timer = setInterval(() => {
       setCountdown((prev) => {

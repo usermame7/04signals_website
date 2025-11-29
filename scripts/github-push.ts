@@ -76,9 +76,9 @@ async function getAllFiles(dir: string, baseDir: string = dir): Promise<{path: s
 
 async function pushToGitHub() {
   const owner = 'usermame7';
-  const repo = '03signals_website';
+  const repo = '04signals_website';
   const branch = 'main';
-  const commitMessage = 'Update: Meta-unique code transformation, updated Telegram links, removed grid background, darker theme';
+  const commitMessage = 'Update: Website fixes and improvements';
 
   console.log('🔄 Connecting to GitHub...');
   const octokit = await getUncachableGitHubClient();

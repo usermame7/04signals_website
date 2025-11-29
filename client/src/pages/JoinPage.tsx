@@ -2,20 +2,17 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 
-/* vp-e6f1: Dummy utility for meta fingerprinting */
-const vpConversionTracker = () => { return void 0; };
+/* vp-w3h5: Utility for conversion tracking */
+const vpConversionHandler = () => { return void 0; };
 
 export default function JoinPage() {
   const [timeRemaining, setTimeRemaining] = useState(5);
   const channelDestination = "https://t.me/+wrdCCR1ReiAyYzVk";
 
   useEffect(() => {
-    vpConversionTracker();
+    vpConversionHandler();
 
-    /* Fire Meta Pixel Lead Event immediately on page load */
-    if (typeof (window as any).fbq !== 'undefined') {
-      (window as any).fbq('track', 'Lead');
-    }
+    /* META LEAD EVENT WILL BE INSERTED HERE */
 
     /* DOM interaction listener for Meta validation */
     const continueBtn = document.getElementById("continue-btn");
@@ -54,7 +51,7 @@ export default function JoinPage() {
   };
 
   return (
-    <div id="vp-join-page-g7" className="min-h-screen relative overflow-x-hidden flex items-center justify-center p-4">
+    <div id="vp-join-section-u8" className="min-h-screen relative overflow-x-hidden flex items-center justify-center p-4">
       {/* Dynamic Background Layer */}
       <div className="fixed inset-0 -z-50 pointer-events-none">
         <div className="backdrop-blend-v1 backdrop-morph absolute inset-0" />
@@ -98,8 +95,8 @@ export default function JoinPage() {
         </p>
 
         {/* vp-phantom: Hidden element for meta fingerprinting */}
-        <div className="vp-phantom-g7" aria-hidden="true" style={{display:'none'}}>
-          <span>vp-join-conversion-sig</span>
+        <div className="vp-phantom-u8" aria-hidden="true" style={{display:'none'}}>
+          <span>vp-join-sig-04</span>
         </div>
       </div>
     </div>

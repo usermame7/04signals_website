@@ -2,7 +2,7 @@
 
 VictoryPipsFX is a modern, single-page React application serving as a forex and gold (XAU) trading education platform. The website functions as a marketing funnel designed to drive visitors to join a Telegram community channel, with an emphasis on educational content and Google Ads compliance for financial services advertising.
 
-The project is built as a static web application optimized for deployment on platforms like Netlify, Vercel, or GitHub Pages. It features a dark-themed trading interface with professional animations, testimonials, and conversion tracking through Google Analytics and Meta Pixel.
+The project is built as a static web application optimized for deployment on platforms like Netlify, Vercel, or GitHub Pages. It features a dark-themed trading interface with professional animations, testimonials, and conversion tracking through Google Analytics. Meta Pixel placeholders are in place for future insertion.
 
 # User Preferences
 
@@ -90,14 +90,13 @@ Preferred communication style: Simple, everyday language.
 
 **Analytics and Tracking:**
 - **Google Analytics (gtag.js)**: Conversion tracking with ID `AW-17543311348`
-- **Meta Pixel**: Facebook conversion tracking with ID `831035846593611`
-- PageView tracking on all pages, Lead event fires on /join page before redirect
-- Lead event parameters: value: 0.00, currency: 'USD'
+- **Meta Pixel**: Placeholder comments in place for future pixel insertion
+- PageView tracking on all pages via Google Analytics
 
 **Communication Platform:**
-- **Telegram**: Primary conversion target with channel link `https://t.me/+qyTeUgsGYGdhY2M8`
+- **Telegram**: Primary conversion target with channel link `https://t.me/+wrdCCR1ReiAyYzVk`
 - Links redirect users after 5-second countdown with manual override button
-- Meta Pixel Lead event fires immediately on /join page load, before countdown starts
+- /join page has confirmation structure ready for Meta validation (confirmation box, continue button, DOM interaction listener)
 
 ### Development Services
 
@@ -109,8 +108,8 @@ Preferred communication style: Simple, everyday language.
 
 **Version Control:**
 - GitHub as primary source code repository
-- Multiple repositories referenced: `usermame7/victorypipsfx-website`, `02signals_website_`
-- Automated deployment workflows configured for GitHub Pages
+- Repository: `usermame7/04signals_website`
+- Automated deployment workflows configured for Netlify
 
 ### UI Component Libraries
 

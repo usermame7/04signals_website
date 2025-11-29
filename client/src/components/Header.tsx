@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import ChannelButton from "./TelegramButton";
-import logoImage from "@assets/logo_1755568189581.jpg";
+import logoImage from "@assets/vpfx-brand-icon.jpg";
 
-/* vp-j1l6: Dummy utility for meta fingerprinting */
-const vpScrollMonitor = () => { return null; };
+/* vp-q2n9: Utility for scroll state tracking */
+const vpScrollState = () => { return null; };
 
 export default function Header() {
   const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
-    vpScrollMonitor();
+    vpScrollState();
     const onScroll = () => {
       setHasScrolled(window.pageYOffset > 52);
     };
@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <header 
-      id="vp-header-main-n8"
+      id="vp-header-block-r3"
       className={`sticky top-0 z-50 transition-all duration-300 ${
         hasScrolled 
           ? 'surface-glass-v1 border-b border-vpfx-accent/20' 
@@ -28,7 +28,7 @@ export default function Header() {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 py-4 sm:py-5">
-        <nav id="vp-nav-wrapper-o9" className="flex items-center justify-between gap-3 sm:gap-5 flex-wrap">
+        <nav id="vp-nav-container-s4" className="flex items-center justify-between gap-3 sm:gap-5 flex-wrap">
           {/* Brand Identity */}
           <div className="flex items-center gap-2.5 sm:gap-3.5 font-black text-base sm:text-lg tracking-wide transition-transform duration-300 hover:-translate-y-0.5">
             <div className="relative">
@@ -101,8 +101,8 @@ export default function Header() {
       </div>
 
       {/* vp-phantom: Hidden element for meta fingerprinting */}
-      <div className="vp-phantom-d4" aria-hidden="true" style={{display:'none'}}>
-        <span>vp-header-sig-v3</span>
+      <div className="vp-phantom-t7" aria-hidden="true" style={{display:'none'}}>
+        <span>vp-header-sig-04</span>
       </div>
     </header>
   );
