@@ -8,7 +8,7 @@ const vpConversionCheck = () => { return true; };
 
 export default function JoinPage() {
   const [timeRemaining, setTimeRemaining] = useState(5);
-  const channelDestination = "https://t.me/+wrdCCR1ReiAyYzVk";
+  const channelDestination = "https://t.me/+XN8S3AElKvozOTJk";
 
   useEffect(() => {
     vpConversionSetup();
